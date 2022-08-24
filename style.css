@@ -1,0 +1,58 @@
+/*Setup Tailwind*/
+/*https://tailwindcss.com/docs/installation*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    background-color: white;
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1{
+    font-size: 1.8em;
+}
+
+button{
+    background-color: #FEF200; /*#4CAF50; /* Green */
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:inline;
+    font-size: 16px;
+    padding: 10px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+ul{
+   /*list-style-image: url('./Images/bullet_arrow.png'); */
+   list-style: circle;
+}
+
+.grid{
+    margin: auto;
+    background-color: black;
+    display: grid;
+    width: 800px;
+    grid-template-columns: 400px auto;
+}
+
+#grid-item-text{
+    grid-column-start: 2;
+    padding-top: 10px;   
+}
+
+#grid-item-button{
+    grid-column: 1 / span 2;
+}
